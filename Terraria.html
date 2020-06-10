@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Terraria</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		a{
+			text-decoration: none;
+		}
+		ul{
+			list-style-type: none;
+		}
+		.clear:after{
+			content: "";
+			display: block;
+			height: 0;
+			clear: both;
+		}
+		.header{
+			width: 1200px;
+			height: 100px;
+			margin: 0 auto;
+			padding-left: 165px;
+		}
+		.nav li{
+			float: left;
+		}
+		.aa{
+			display: inline-block;
+			width: 80px;
+			height: 40px;
+			margin: 30px 20px 30px 0 ;
+			color:#050505;
+			line-height: 40px;
+			text-align: center;
+			font-size: 18px;
+		}
+		.aa:hover{
+			border-bottom: 2px green solid;
+		}
+		form{
+			float: left;
+			margin-top: 31px;
+		}
+		.search{
+			width:411px;
+			height:40px;
+			float: left;
+			border: 1px solid green;
+			text-indent: 19px;
+		}
+		.submit{
+			float: left;
+			width:52px;
+			height:42px;
+			background:green url('images/fa-search.png') no-repeat center center;
+			border: 1px solid green;
+		}
+		.a{
+			margin-left: 30px;
+			line-height: 100px;
+			font-size: 18px;
+			display: inline;
+			color: black;
+		}
+		.banner{
+			width: 900px;
+			height: 300px;
+			margin: 0 auto;
+			background: url('images/QQ图片20200605173956.png');
+		}
+		.container1{
+			width: 1200px;
+			height: 80px;
+			margin: 0 auto;
+		}
+		.container1 li{
+			float: left;
+			width: 120px;
+			height: 80px;
+			line-height: 80px;
+			font-size: 16px;
+			text-align: center;
+		}
+		.container1 li a{
+			color: black;
+		}
+		.container1 ul{
+			width: 500px;
+			height: 80px;
+			margin-left: 350px;
+		}
+		.advice{
+			line-height: 80px;
+			float: left;
+			font-size: 20px;
+		}
+		.advice a{
+			color: #494949;
+		}
+		.all2{
+			height: 80px;
+			line-height: 80px;
+			float: right;
+			margin-right: 30px;
+			font-size: 12px;
+		}
+		.all2 a{
+			color: #494949;
+		}
+		
+		.container2{
+			width: 1200px;
+			margin: 0 auto;
+		}
+		.container2 li{
+			float: left;
+			margin-left: 60px;
+			margin-bottom: 14px;
+			width: 234px;
+			height: 340px;
+			text-align: center;
+			background-color: white;
+			border: 2px solid green;
+		}
+		.container2 img {
+  			margin-top: 45px;
+  			margin-bottom: 20px;
+		}
+		.nav2{
+			width:900px;
+			background:rgba(255,255,255,1);
+			box-shadow:0px 2px 3px 0px rgba(118,118,118,0.2);
+			margin: 0 auto;
+			padding: 21px 61px 21px 400px;
+		}
+		.nav2 li{
+			float: left;
+			width: 132px;
+			font-size: 16px;
+			border-right: 1px solid #BFBFBF;
+			text-align: center;
+		}
+		.nav2 a{
+			color:#050505;
+		}
+		.nav2 .last{
+			border: none;
+		}
+		.all3{
+			margin-left: 100px;
+			font-size: 14px;
+		}
+		.all3 a{
+			color:gray;
+		}
+		.container3{
+			width: 1200px;
+			height: 400px;
+			margin: 0 auto;
+			margin-top: 4px;
+		}
+		.container3 li{
+			float: left;
+			margin-left: 60px;
+			margin-bottom: 14px;
+			width: 234px;
+			height: 400px;
+			background-color: white;
+			border: 2px solid green;
+		}
+		.container3 img {
+  			margin: 45px 17px 20px 17px;
+  			text-align: center;
+  			width: 200px;
+  			height: 180px;
+		}
+		.container3 .p1{
+			margin-bottom: 18px;
+			margin-left: 18px;
+			width: 180px;
+		}
+		.container3 .p2{
+			font-size: 12px;
+			margin-left: 18px;
+
+		}
+		.orange{
+			color: orange;
+		}
+		.gray{
+			color: gray;
+		}
+		.container3 .three{
+			margin-bottom: 40px;
+		}
+		.container3 .one{
+			margin-bottom: 82px
+		}
+		.container4{
+			height: 50px;
+			width: 1200px;
+			margin: 0 auto;
+			color: #494949;
+		}
+		.container5 img{
+			width: 400px;
+			height: 200px;
+		}
+		.container5{
+			width: 830px;
+			height: 500px;
+			margin: 0 auto;
+			padding-left: 90px;
+		}
+		.container5 li{
+			float: left;
+			margin-left: 5px;
+		}
+		.relative1{
+			position: relative;
+		}
+		.container5 p{
+			position: absolute;
+			top: 97px;
+			background: rgba(0,0,0,0.5);
+			padding: 20px;
+			color: white;
+		}
+
+		.container6{
+			width: 1200px;
+			margin: 0 auto;
+		}
+		.container6 li{
+			float: left;
+			height: 20px;
+			width: 70px;
+			color:gray;
+			line-height: 20px;
+			text-align: center;
+			font-size: 14px;
+			border-right: 1px solid gray;
+		}
+		.container6 a{
+			color: gray;
+		}
+		.container6 .last1{
+			border-right: none;
+		}
+		.container6 ul{
+			margin-left: 470px;
+		}
+		.container6 p{
+			text-align: center;
+			color: gray;
+			margin-left: 80px;
+		}
+	</style>
+</head>
+<body>
+	<div class="header clear">
+		<ul class="nav clear">
+			<li><a href="" class="aa">首页</a></li>
+			<li><a href="" class="aa">攻略</a></li>
+			<li><a href="" class="aa">论坛</a></li>
+			<li><a href="" class="aa">更多</a></li>
+			<li>
+				<form class="clear">
+					<input type="text" name="search" class="search" placeholder="输入关键词">
+					<input type="button" class="submit">
+				</form>
+			</li>
+			<li><a href="" class="a">登录</a><a href="" class="a">注册</a></li>
+		</ul>
+	</div>
+	<div class="banner">
+		
+	</div>
+	<div class="container1 clear">
+		<span class="advice"><a href="">新增BOSS</a></span>
+		<span class="all2"><a href="">查看全部</a></span>
+		<ul class="clear">
+			<li><a href="">普通</a></li>
+			<li><a href="">专家</a></li>
+			<li><a href="">大师</a></li>
+		</ul>
+	</div>
+	<div class="container2">
+		<ul class="clear">
+			<li>
+				<img src="images/QQ图片20200609115046.png">
+				<p>克苏鲁之眼</p>
+				<p>血量：3640</p>
+				<p>攻击：30</p>
+				<p>防御：15</p>
+			</li>
+			<li>
+				<img src="images/QQ图片20200609115057.png">
+				<p>机械骷髅王</p>
+				<p>血量：42000</p>
+				<p>攻击：90</p>
+				<p>防御：48</p>
+			</li>
+			<li>
+				<img src="images/QQ图片20200609115100.png">
+				<p>肉山</p>
+				<p>血量：11200</p>
+				<p>攻击：80</p>
+				<p>防御：50</p>
+			</li>
+			<li>
+				<img src="images/QQ图片20200609115054.png">
+				<p>世纪之花</p>
+				<p>血量：30000</p>
+				<p>攻击：50</p>
+				<p>防御：14</p>
+			</li>
+			<li>
+				<img src="images/QQ图片20200609120522.png">
+				<p>寒冰巨人</p>
+				<p>血量：3000</p>
+				<p>攻击：50</p>
+				<p>防御：32</p>
+			</li>
+			<li>
+				<img src="images/QQ图片20200609120525.png">
+				<p>石巨人</p>
+				<p>血量：35000</p>
+				<p>攻击：70</p>
+				<p>防御：24</p>
+			</li>
+			<li>
+				<img src="images/QQ图片20200609120539.png">
+				<p>冰霜女王</p>
+				<p>血量：13000</p>
+				<p>攻击：124</p>
+				<p>防御：38</p>
+			</li>
+			<li>
+				<img src="images/QQ图片20200609120528.png">
+				<p>月亮领主</p>
+				<p>血量：217500</p>
+				<p>攻击：200</p>
+				<p>防御：120</p>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<ul class="nav2 clear">
+			<li><a href="">饰品</a></li>
+			<li><a href="">头盔</a></li>
+			<li><a href="">护甲</a></li>
+			<li class="last"><a href="">护胫</a></li>
+			<span class="all3"><a href="">查看全部<a></span>
+		</ul>
+	</div>
+	<div class="container3">
+		<ul>
+			<li>
+				<img src="images/QQ图片20200609124245.png">
+				<p class="p1 three">Grants infnite winq and rocket boot fight increases flight and jump mobility</p>
+				<p class="p2"><span class="orange">日食</span class="gray">•<span>掉落</span></p>
+			</li>
+			<li>
+				<img src="images/QQ图片20200609124239.png">
+				<p class="p1">10% summon tag critical strike chance.Your summons will focus struck enemies</p>
+				<p class="p2"><span class="orange">光之女皇</span class="gray">•<span>掉落</span></p>
+			</li>
+			<li>
+				<img src="images/QQ图片20200609124242.png">
+				<p class="p1 three">Grants infnite winq and rocket boot fight increases flight and jump mobility</p>
+				<p class="p2"><span class="orange">光之女皇</span class="gray">•<span>掉落</span></p>
+			</li>
+			<li>
+				<img src="images/QQ图片20200609124248.png">
+				<p class="p1 one">Can be worn in vanity slots</p>
+				<p class="p2"><span class="orange">史莱姆皇后</span class="gray">•<span>掉落</span></p>
+			</li>
+		</ul>
+	</div>
+	<div class="container4 clear">
+		<p>Steam推荐</p>
+	</div>
+	<div class="container5">
+		<ul class="clear">
+			<li class="relative1">
+				<img src="images/WW6[KT]CMW}QA@]CL~)3GOL.png">
+				<p>成为挖掘者，努力工作，努力挖掘，探索世界，你将成为阿拉斯加最富有的人，使用多种精细建模的机械尽你所能。</p>
+			</li>
+			<li class="relative1">
+				<img src="images/QQ图片20200609150350.png">
+				<p>这款广受好评的虚拟现实施法类游戏将带着手势操控系统、颇具挑战性的敌人、宏大的冒险场景以及始终诙谐幽默的旁白者回归。</p>
+			</li>
+			<li class="relative1">
+				<img src="images/QQ图片20200609165356.png">
+				<p>白天的喧嚣，夜晚的狂欢，尽在《NFS》豪华版，这是一款惊险刺激的街头赛车游戏，随着太阳落山，法律的界限也将逐渐模糊。</p>
+			</li>
+			<li class="relative1">
+				<img src="images/QQ图片20200609165400.png">
+				<p>在完全可摧毁的程序宇宙中，应对未知威胁，生存下来。在各种竞技场中对战其他玩家，还可以在沙盒模式下尽情创造。</p>
+			</li>
+		</ul>
+	</div>
+	<div class="container6">
+		<ul class="clear">
+			<li><a href="">关于泰小拉</a></li>
+			<li><a href="">联系泰小拉</a></li>
+			<li><a href="">广告合作</a></li>
+			<li><a href="">下载帮助</a></li>
+			<li class="last1"><a href="">网站地图</a></li>
+		</ul>
+		<p>2012-2020 www.taixiaola.com版权所有 冀ICP备06019008号</p>
+	</div>
+</body>
+</html>
